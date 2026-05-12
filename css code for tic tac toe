@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+}
+
+.container {
+    height: 7ovh;
+    display: flex;
+    /*ab inse pura container mtlb vo pura box hi beech m ajayega*/
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.game {
+    height: 60vmin;
+    /*means 1% of veiwports smaller dimension*/
+    width: 60vmin;
+    /*ab isse apne ap box next m agye bcz utni width leli*/
+    display: flex;
+    /*jaise ek line m ajaye sb*/
+    flex-wrap: wrap;
+    /*isse next line m ajayege sb three three m width  ke hisab se*/
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    /*ab isse box ke beech m gap ajayega*/
+}
+
+.box {
+    height: 18vmin;
+    /* agr jo div h game class uski height agr 60 h to use 3 m divide krna h to 20 -20 height m divide krnge*/
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    font-size: 8vmin;
+    /* bcz box ka size bda h to uske andr ka text bhi bda hona chahiye to uska adha lia*/
+    color: rgb(191, 32, 32);
+    background-color: #ffffc7;
+}
+
+#reset-btn {
+    padding: 1rem;
+    font-family: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#new-btn {
+    padding: 1rem;
+    font-family: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 8vmin;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* ab isse reset game next line m ajayega*/
+    gap: 4rem;
+    /* dono winner and reset ke beech m space ajayega*/
+}
+
+.hide {
+    display: none;
+    /* abhin vo winner vala ni dikhega bcz ham jb chahte h tb use dikhayege jb winner aa jaye tb new game*/
+}
